@@ -12,20 +12,46 @@
             <h2>Breakfast delivery that's REAL FAST</h2>
         </header>
         <main>
-            <div class="menu-item">
-                <div class="item">
-                    <div class = "emoji" id = "emoji1">🥞</div>
-                    <div class = "content">
-                        <h3>Pancakes</h3>
-                        <p class = "ingredients" id = "ingredients">
-                            eggs, pancake mix, milk, butter, syrup
-                        </p>
-                        <p class="price" id="price">$7</p>
-                    </div>
-                </div>
-                <button class= "item-btn" id="item-btn">+</button>
-            </div>
         </main>
+        <div class = "order-space">
+            <div class="order-visible">
+                <p class = "order-title">Your Order</p>  
+                <div class = "order-container" id = "order-container">
+                    <div class = "item-container">
+                        <p class = "order-item" id = "order-item" >Pancakes</p>
+                        <button class = "remove-btn" id = "remove-btn">remove</button>
+                    </div>
+                    <p id = "price">$14</p>
+                </div>
+                <div class = "price-container">
+                    <p id = "total-price">Total price:</p>
+                    <p id = "total-price-sum">$14</p>
+                </div>
+                <div class="completebtn-container">
+                    <button id="complete-order-btn">Complete order</button>
+                </div>
+            </div>
+        </div>
+        <div class="completed-container">
+            <div class="completed-order">
+                <p class ="completed-text">
+                    <p class="thanks-text">Thanks, <span id="name">Human!</span></p>
+                    Your order will be there in approximately 1-28 business days.
+                </p>
+            </div>
+        </div>
+        <div class="pay-modal">
+            <form>
+                <p class="cc-title">Enter card details</p>
+                <input type="text" id="name" placeholder="Enter your name" required>
+                <input type="text" id="cc-number" placeholder="Enter your card number" required>
+                <input type ="text" id = "cvv" placeholder="Enter CVV" required>
+                <p class="shipping-title">Enter shipping details</p>
+                <input type ="text" id = "address" placeholder="Enter address" required>
+                <input type ="text" id = "phone" placeholder="Enter phone number" required>
+                <button class="pay-btn" id="pay-btn">Pay</button>
+            </form>
+        </div>
         <script src="script.js" type="module"></script>
     </body>
 </html>

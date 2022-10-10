@@ -9,7 +9,7 @@ export const menuArray = [
     {
         name: "Bagel",
         ingredients: ["bread", "butter", "cream cheese"],
-        price: 5,
+        price: 4,
         emoji: "🥯",
         id: 1
     },
@@ -17,7 +17,7 @@ export const menuArray = [
         name: "Bacon and Eggs",
         ingredients: ["Bacon", "eggs", "pepper"],
         price: 6, 
-        emoji: "🥓 🍳",
+        emoji: "🍳",
         id: 2
     }, 
     {
@@ -31,7 +31,7 @@ export const menuArray = [
         name: "Orange Juice",
         ingredients: ["orange", "water", "sugar"],
         price: 3,
-        emoji: "🍊🥤",
+        emoji: "🍊",
         id: 4
     }
 ]
