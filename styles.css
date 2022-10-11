@@ -69,6 +69,7 @@ main {
 
 .item-container {
     display: flex;
+    flex-direction: column;
 }
 
 .price-container{
@@ -76,7 +77,7 @@ main {
     justify-content: space-between;
 }
 
-.completebtn-container {
+.complete-btn-container {
     display: flex;
     flex-direction: column;
 }
@@ -99,18 +100,26 @@ main {
     border-radius: 3px;
     padding: 20px 127px;
     font-size: 10px;
+    display: none;
 }
 
 .pay-modal {
     width: 524px;
     height: 742.24px;
+    padding: 10px 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 24;
+    text-align: center;
     background-color:#fff ;
+    filter: drop-shadow(5.19px 5.19px 255.44px rgba(0, 0, 0, 0.5));
     position:fixed;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
+    display: none;
 }
 
 form {
@@ -124,6 +133,10 @@ input {
     border: 1px solid #757575;
     height: 71.3px;
     margin-bottom: 23.22px;
+}
+
+.visible {
+    display: contents;
 }
 
 /* typography */ 
