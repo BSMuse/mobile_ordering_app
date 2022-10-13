@@ -39,7 +39,8 @@ document.getElementById('form').addEventListener('submit', function(e){
     e.preventDefault(e)
     document.querySelector('.completed-text-container').classList.add("visible-complete")
     document.querySelector('.pay-modal').classList.remove("visible")
-    document.querySelector(".order-visible").classList.remove("visible") 
+    document.querySelector('.order-visible').classList.remove("visible") 
+    document.querySelector('#name').textContent = document.querySelector('#full-name').value + "!"
     orderArray.length = 0
 })
 

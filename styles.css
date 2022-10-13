@@ -84,6 +84,38 @@ main {
     justify-content: space-between;
 }
 
+.pay-modal {
+    width: 524px;
+    height: 742.24px;
+    padding: 10px 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 24;
+    text-align: center;
+    background-color:#fff ;
+    filter: drop-shadow(5.19px 5.19px 255.44px rgba(0, 0, 0, 0.5));
+    position:fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+input {
+    border: 1px solid #757575;
+    height: 71.3px;
+    margin-bottom: 23.22px;
+}
+
 .complete-btn-container {
     display: flex;
     flex-direction: column;
@@ -94,11 +126,13 @@ main {
     visibility: hidden;
     flex-direction: column;
     align-items: center;
-    position: absolute;
-    top: 1175px;
-    bottom: 0px;
+    max-width: 504px;
+    position:fixed;
+    top: 875px;
+    bottom: 0;
     left: 0;
     right: 0;
+    margin: auto;
     color: #065F46;
     text-align: center;
 }
@@ -107,7 +141,6 @@ main {
     background: #ECFDF5;
     border-radius: 3px;
     padding: 20px 127px;
-    font-size: 20px;
 }
 
 .rate-container {
@@ -157,42 +190,6 @@ main {
 .rate > input:checked ~ label:hover ~ label,
 .rate > label:hover ~ input:checked ~ label {
     color: #c59b08;
-}
-
-.delivery-time {
-    font-size: 10px;
-}
-
-.pay-modal {
-    width: 524px;
-    height: 742.24px;
-    padding: 10px 25px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    font-size: 24;
-    text-align: center;
-    background-color:#fff ;
-    filter: drop-shadow(5.19px 5.19px 255.44px rgba(0, 0, 0, 0.5));
-    position:fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    display: none;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-}
-
-input {
-    border: 1px solid #757575;
-    height: 71.3px;
-    margin-bottom: 23.22px;
 }
 
 .visible {
@@ -245,13 +242,20 @@ h3 {
 .total-price{
     display: inline;
     margin-left: 175px;
-}
+} 
 
 .thanks-text {
-    font-size: 48px;
-    margin: 0;
+    font-size: 35px;
+    margin-bottom: 0px;
 }
 
+#name {
+    font-size: 45px;
+}
+
+.delivery-time {
+    font-size: 10px;
+}
 
 /* buttons */
 
