@@ -43,7 +43,7 @@ document.getElementById('form').addEventListener('submit', function(e){
     orderArray.length = 0
 })
 
-document.getElementById('rate').addEventListener("click", function(e) {
+document.getElementById('rate').addEventListener("click", function() {
     document.querySelector('.completed-text-container').classList.remove("visible-complete")
 })
 
