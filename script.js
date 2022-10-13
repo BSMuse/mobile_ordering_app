@@ -38,12 +38,13 @@ document.getElementById('complete-order-btn').addEventListener('click', function
 document.getElementById('form').addEventListener('submit', function(e){
     e.preventDefault(e)
     document.querySelector('.completed-text-container').classList.add("visible-complete")
-    setTimeout( function(){
-        document.querySelector('.completed-text-container').classList.remove("visible-complete")
-    },2000)
     document.querySelector('.pay-modal').classList.remove("visible")
     document.querySelector(".order-visible").classList.remove("visible") 
     orderArray.length = 0
+})
+
+document.getElementById('rate').addEventListener("click", function(e) {
+    document.querySelector('.completed-text-container').classList.remove("visible-complete")
 })
 
 function renderOrder(){ 
